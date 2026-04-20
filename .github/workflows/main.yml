@@ -5,6 +5,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest # ubuntu-24.04-arm, ubuntu-latest, ubuntu-24.04-riscv
+    
+    permissions:
+      contents: write
+      actions: write
+      checks: write
+      
     steps:
       - uses: armbian/build@v26.2.1 # main
         with:
