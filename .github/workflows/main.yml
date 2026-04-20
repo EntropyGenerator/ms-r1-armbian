@@ -9,7 +9,7 @@ jobs:
       - uses: armbian/build@v26.2.1 # main
         with:
           armbian_token: ${{ secrets.GITHUB_TOKEN }}
-          armbian_board: "minisforum-msr1" # "uefi-arm64" # orangepi5 bananapif3
+          armbian_board:  "uefi-arm64" # "minisforum-msr1" orangepi5 bananapif3
           armbian_release: "trixie" # forky
           armbian_target: "build"
           armbian_ui: "kde-plasma" # server xfce gnome
