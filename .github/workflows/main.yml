@@ -4,13 +4,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04-arm # ubuntu-latest, ubuntu-24.04-riscv
+    runs-on: ubuntu-latest # ubuntu-24.04-arm, ubuntu-latest, ubuntu-24.04-riscv
     steps:
       - uses: armbian/build@v26.2.1 # main
         with:
           armbian_token: ${{ secrets.GITHUB_TOKEN }}
-          armbian_board: "uefi-arm64" # orangepi5 bananapif3
+          armbian_board: "minisforum-msr1" # "uefi-arm64" # orangepi5 bananapif3
           armbian_release: "trixie" # forky
           armbian_target: "build"
           armbian_ui: "kde-plasma" # server xfce gnome
           armbian_runner_clean: "yes"
+          armbian_kernel_branch: "edge"
