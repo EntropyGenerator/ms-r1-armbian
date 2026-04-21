@@ -18,6 +18,6 @@ jobs:
           armbian_board:  "uefi-arm64" # "minisforum-msr1" orangepi5 bananapif3
           armbian_release: "trixie" # forky
           armbian_target: "build"
-          armbian_ui: "kde-plasma" # server xfce gnome
+          armbian_ui: "xfce" # "kde-plasma" # server xfce gnome
           armbian_runner_clean: "yes"
           armbian_kernel_branch: "edge"
